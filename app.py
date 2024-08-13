@@ -3,8 +3,8 @@ import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
+from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
-import sklearn
 
 
 ps = PorterStemmer()
@@ -12,7 +12,7 @@ ps = PorterStemmer()
 
 def transform_text(text):
     text = text.lower()
-    text = nltk.word_tokenize(text)
+    text = word_tokenize(text)
 
     y = []
     for i in text:
