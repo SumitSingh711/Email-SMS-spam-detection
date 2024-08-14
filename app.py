@@ -6,7 +6,8 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.stem.porter import PorterStemmer
 
-# nltk.download('punkt')
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
 ps = PorterStemmer()
 
