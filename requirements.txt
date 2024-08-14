@@ -2,7 +2,6 @@ streamlit
 nltk
 scikit-learn
 
-import nltk
 
 # Download punkt_tab resource
 nltk.download('punkt_tab')
